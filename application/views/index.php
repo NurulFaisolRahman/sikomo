@@ -9,7 +9,6 @@
   <meta content="" name="keywords">
   <!-- Favicons -->
   <link href="assets/img/favicon.ico" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Jost:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
   <!-- Vendor CSS Files -->
@@ -71,11 +70,11 @@
           <?php foreach ($Komoditas as $key) { ?>
           <div class="col-lg-3 col-md-3 komoditas-item filter-app">
             <div class="komoditas-wrap">
-              <img src="assets/img/Komoditas/<?=$key['Foto']?>" class="img-fluid" alt="">
+              <img src="Komoditas/<?=$key['Foto']?>" class="img-fluid" alt="">
               <div class="komoditas-info">
                 <h4><?=$key['Nama']?></h4>
                 <div class="komoditas-links">
-                  <a href="assets/img/Komoditas/Jagung.jpg" data-gall="komoditasGallery" class="venobox" title="Jagung"><i class="icofont-eye"></i></a>
+                  <a href="Komoditas/<?=$key['Foto']?>" data-gall="komoditasGallery" class="venobox" title="Foto <?=$key['Nama']?>"><i class="icofont-eye"></i></a>
                   <a Komoditas="<?=$key['Id']?>" class="Komoditas" title="Detail Turunan"><i class="icofont-external-link"></i></a>
                 </div>
               </div>
